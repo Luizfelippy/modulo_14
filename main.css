@@ -1,0 +1,106 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: #171D25;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #171D25;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-jogos-por-genero .nav-link.active:hover,
+.social-links li a {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #ffeae6;
+}
+
+.section-title {
+    font-family: 'Caveat', cursive;
+}
+
+#sobre-a-plataforma, #jogos-por-genero {
+    background-color: #cacaca;
+}
+
+.text-colored {
+    color: #4c41e1;
+}
+
+.plataform-colored {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-jogos-por-genero .nav-link.active,
+#suporte button,
+footer p {
+    background-color: #171D25;
+    color: #fff;
+}
+
+.nav-jogos-por-genero .nav-link:hover {
+    color: #171D25;
+}
+
+
+.social-links li,
+.game-plataform li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a,
+.game-plataform a,
+.d-flex a {
+    text-decoration: none;
+}
+
+form textarea {
+    resize: none;
+    height: 120px;
+}
+
+footer > .container {
+    height: 35px;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }   
+}
+
+.card-games {
+    height: 30px;
+    background-color: #000000f1;
+}
+
+.d-flex a {
+    color: #fff;
+}
+
+@media (max-width:767px) {
+    .container{
+        text-align: center;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+

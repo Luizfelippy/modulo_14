@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="cabecalho" class="navbar navbar-expand-lg sticky-top p-3">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">
+                <i class="bi bi-controller fs-4 "></i>
+                TDM Game Store
+            </h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav id="menu-navegacao" class="navbar-collapse collapse justify-content-end">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-plataforma" class="nav-link">
+                            <i class="bi bi-people"></i>
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#destaques" class="nav-link ">
+                            <i class="bi bi-rocket-takeoff"></i>
+                            Destaques
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#jogos-por-genero" class="nav-link ">
+                            <i class="bi bi-cart4"></i>
+                            Loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#suporte" class="nav-link ">
+                            <i class="bi bi-tools"></i>
+                            Suporte
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section >
+            <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="w-100" src="./slides/slide1.png" alt="Farcry 6">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="w-100" src="./slides/slide2.png" alt="XDefiant">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="w-100" src="./slides/slide3.png" alt="The crew: Motor Fest">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button data-bs-target="#carousel" class="active" data-bs-slide-to="0" type="button"></button>
+                    <button data-bs-target="#carousel" data-bs-slide-to="1" type="button"></button>
+                    <button data-bs-target="#carousel" data-bs-slide-to="2" type="button"></button>
+                </div>
+            </div>
+            <div id="sobre-a-plataforma" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./plataforma.jpg" class="d-block w-100 rounded">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a plataforma</span></h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae necessitatibus natus quo saepe incidunt iure nesciunt unde at eveniet quod aperiam harum.</p>
+                            <ul class="game-plataform p-0">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-windows plataform-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-2 me-2">
+                                    <a href="#">
+                                        <i class="bi bi-playstation plataform-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 me-2">
+                                    <a href="#">
+                                        <i class="bi bi-xbox plataform-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-nintendo-switch plataform-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="destaques" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Destaques <span class="text-colored">do mês</span></h2>
+                </div>
+                <div class="row mt-4 text-center">
+                    <div class="col-md-4 h-100">
+                        <div class="card">
+                            <img src="./destaques/jogo1.jpg" alt="Outcast Tales: The First Journey" >
+                            <div class="card-body">
+                                <h5 class="card-title">Outcast Tales: The First Journey</h5>
+                            <p class="card-text pb-4">
+                                Vivencie o início de uma grande aventura em Outcast Tales: The First Journey. Use toda a sua estratégia em batalhas táticas, tome decisões difíceis e escolha suas próprias aventuras: escreva uma história única para seu grupo de excluídos!
+                            </p>
+                            <a href="#" class="btn btn-primary">Download</a>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Aventura, Indie, RPG, Estratégia, Gratuito p/ Jogar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./destaques/jogo2.jpg" alt="El Dorado: The Golden City Builder" >
+                            <div class="card-body">
+                                <h5 class="card-title">El Dorado: The Golden City Builder</h5>
+                            <p class="card-text">
+                                O prólogo é apenas parte da jogabilidade que espera por você na versão completa do jogo. El Dorado: Prologue é um jogo de estratégia de construção de cidades no qual você planeja, constrói e desenvolve seu assentamento para conquistar Yucatán e ganhar o título de Cidade Dourada.
+                            </p>
+                            <a href="#" class="btn btn-primary">Download</a>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text"> Indie, Simulação, Estratégia, Gratuito p/ Jogar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="./destaques/jogo3.jpg" alt="BioGun: Clinical Trial" >
+                            <div class="card-body">
+                                <h5 class="card-title">BioGun: Clinical Trial</h5>
+                            <p class="card-text pb-4">
+                                Versão próloga do jogo BioGun. Mergulhe no mundo microscópico. Enfrente ameaças virais e corredores de vento na sua missão para salvar o melhor amigo da humanidade. Você será a vacina que salvará um tipo de cão da extinção?
+                            </p>
+                            <a href="#" class="btn btn-primary">Download</a>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Ação, Estratégia, Aventura, Indie, Gratuito p/ Jogar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="jogos-por-genero" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Jogos <span class="text-colored">por gênero</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-jogos-por-genero">
+                            <button data-bs-toggle="tab" data-bs-target="#acao" class="fw-bold text-start nav-link text-colored active" type="button">Ação</button>
+                            <button data-bs-toggle="tab" data-bs-target="#corrida" class="fw-bold text-start nav-link text-colored" type="button">Corrida</button>
+                            <button data-bs-toggle="tab" data-bs-target="#esportes" class="fw-bold text-start nav-link text-colored" type="button">Esportes</button>
+                            <button data-bs-toggle="tab" data-bs-target="#estrategia" class="fw-bold text-start nav-link text-colored" type="button">Estratégia</button>
+                            <button data-bs-toggle="tab" data-bs-target="#indie" class="fw-bold text-start nav-link text-colored" type="button">Indie</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div id="acao" class="tab-pane active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card mb-4">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/açao/jogo4.jpg" alt="Monster hunter: world">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">R$99,90</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/açao/jogo5.jpg" alt="Tekken 8">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">R$269,90</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/açao/jogo6.jpg" alt="War thunder">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-apple"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-steam"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-badge-vr-fill"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">Gratuito</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/açao/jogo7.jpg" alt="Warframe">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">Gratuito</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/açao/jogo8.jpg" alt="Dead by daylight">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">R$49,90</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/açao/jogo9.jpg" alt="Palword">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">R$88,99</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="corrida" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/corrida/jogo10.jpg" alt="Forza horizon 4">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">R$249,00</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/corrida/jogo11.jpg" alt="Need for speed: heat">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">R$279,90</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="esportes" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/esportes/jogo12.jpg" alt="eFootball™ 2024">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">Gratuito</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/esportes/jogo13.jpg" alt="EA SPORTS FC™ 24">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">R$359,90</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/esportes/jogo14.jpg" alt="F1® 23">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">R$359,00</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/esportes/jogo15.jpg" alt="Russian Fishing 4">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">Gratuito</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="estrategia" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card mb-4">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/estrategia/jogo16.jpg" alt="Marvel snap">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">Gratuito</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/estrategia/jogo17.jpg" alt="Baldur's Gate 3">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-apple"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">R$199,99</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/estrategia/jogo18.jpg" alt="7 Days to Die">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-apple"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-steam"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">R44,99</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/estrategia/jogo19.jpg" alt="Slay the Spire">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-apple"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-steam"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">R$74,99</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/estrategia/jogo20.jpg" alt="Persona 3 Reload">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">R$349,90</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/estrategia/jogo21.jpg" alt="Yu-Gi-Oh! Master Duel">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">Gratuito</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="indie" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/indie/jogo22.jpg" alt="Project Zomboid">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-apple"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-steam"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">R$59,99</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="w-100" src="./generos/indie/jogo23.jpg" alt="Hollow Knight">
+                                            </a>
+                                            <div class="card-footer card-games p-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="game-plataform p-0  ">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-windows"></i>
+                                                            </a>                                                            
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-apple"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-steam"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#">
+                                                        <p class="fw-bold p-0">R$46,99</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="suporte" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center pb-4">Como <span class="text-colored">podemos ajudar?</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" placeholder="Digite seu nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" placeholder="Digite seu e-mail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone</label>
+                                <input type="tel" id="telefone" class="form-control" onkeypress="$(this).mask('(00)00000-0000')" placeholder="(00)00000-0000" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control" placeholder="Digite sua mensagem..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    
+                        
+                        
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="navbar">
+            <div class="container">
+                <p>
+                    2024 &copy; TDM Game Store - Todos os direitos reservados
+                </p>
+                <ul class="social-links">
+                    <li class="fs-5">
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="fs-5 ms-1 me-1">
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="fs-5">
+                        <a href="#">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
